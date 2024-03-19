@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Junior Developer & Graphic Designer Portfolio</title>
+</head>
+
+<body class="text-gray-800 antialiased">
+
+  <!-- Header / Navigation -->
+  <!-- <header class="bg-white shadow ">
+    <nav class="container mx-auto  px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-3xl font-bold text-purple-500">mOn</a>
+      <ul class="flex items-center space-x-4">
+        <li><a href="#" class="hover:text-purple-500">Home</a></li>
+        <li><a href="#about" class="hover:text-purple-500">About Me</a></li>
+        <li><a href="#skills" class="hover:text-purple-500">Skills</a></li>
+        <li><a href="#work" class="hover:text-purple-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-purple-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <header
+    class="bg-transparent absolute top-0 pl-16 w-full flex justify-between items-center p-4 transition-all duration-300 ease-in-out"
+    id="site-header">
+    <a href="#" class="text-3xl font-bold text-purple-500">mOn</a>
+    <nav>
+      <ul class="flex items-center space-x-4">
+        <li><a href="#" class="text-white hover:text-purple-500 transition-colors duration-300">Home</a></li>
+        <li><a href="#about" class="text-white hover:text-purple-500 transition-colors duration-300">About Me</a></li>
+        <li><a href="#skills" class="text-white hover:text-purple-500 transition-colors duration-300">Skills</a></li>
+        <li><a href="#work" class="text-white hover:text-purple-500 transition-colors duration-300">Projects</a></li>
+        <li><a href="#contact" class="text-white hover:text-purple-500 transition-colors duration-300">Contact</a></li>
+        <li><a href="/path/to/MONSIF-EL-OUARAT-CV.pdf"
+            class="bg-purple-500 text-white py-2 px-4 rounded transition-colors duration-300 hover:bg-purple-700"
+            download>Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section bg-gradient-to-r from-indigo-900 to-indigo-400 text-white h-screen ">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="hero-text md:w-1/2 ml-8">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 ">Hi, I'm MONSIF ELOUARAT.</h1>
+        <p class="text-xl md:text-2xl font-semibold mb-2 typing-effect">A Full Stack Web Developer with a Design Edge.
+        </p>
+        <p class="mb-4 text-lg font-thin">Crafting intuitive user experiences and scalable web applications.</p>
+        <div class="mt-10 flex items-center">
+          <a href="#contact"
+            class="inline-flex items-center justify-center bg-white hover:bg-indigo-600 text-indigo-700 hover:text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg mr-4">Let's
+            Connect</a>
+          <a href="/public/Monsif-cv.pdf"
+            class="inline-flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg"
+            download>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="15" viewBox="0 0 384 512" class="mr-4">
+              <path fill="#74C0FC"
+                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+            </svg>
+            Download CV
+          </a>
+        </div>
+
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0 pb-20 pr-20 slideInRight">
+        <img src="./public/profile1.jpg" alt="About Me"
+          class="rounded-full border-4 border-indigo-500 shadow-xl transition-transform duration-500 hover:scale-110 w-auto h-96">
+      </div>
+    </div>
+  </section>
+  <div class="fixed right-0 top-1/3 z-50 space-y-2">
+    <!-- Behance Button -->
+    <a href="https://www.behance.net/" target="_blank"
+      class="block w-10 h-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="36"
+        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#ffffff"
+          d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z" />
+      </svg>
+    </a>
+    <!-- LinkedIn Button -->
+    <a href="https://www.linkedin.com/in/monsif-elouarat" target="_blank"
+      class="block w-10 h-10 bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+        <path fill="#ffffff"
+          d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+      </svg>
+    </a>
+    <!-- Dribbble Button -->
+    <a href="https://dribbble.com/" target="_blank"
+      class="block w-10 h-10 bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"
+        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#ffffff"
+          d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm164 114.4c29.5 36 47.4 82 47.8 132-7-1.5-77-15.7-147.5-6.8-5.8-14-11.2-26.4-18.6-41.6 78.3-32 113.8-77.5 118.3-83.5zM396.4 97.9c-3.8 5.4-35.7 48.3-111 76.5-34.7-63.8-73.2-116.2-79-124 67.2-16.2 138 1.3 190.1 47.5zm-230.5-33.3c5.6 7.7 43.4 60.1 78.5 122.5-99.1 26.3-186.4 25.9-195.8 25.8C62.4 147.2 106.7 92.6 165.9 64.6zM44.2 256.3c0-2.2 0-4.3 .1-6.5 9.3 .2 111.9 1.5 217.7-30.1 6.1 11.9 11.9 23.9 17.2 35.9-76.6 21.6-146.2 83.5-180.5 142.3C64.8 360.4 44.2 310.7 44.2 256.3zm81.8 167.1c22.1-45.2 82.2-103.6 167.6-132.8 29.7 77.3 42 142.1 45.2 160.6-68.1 29-150 21.1-212.8-27.9zm248.4 8.5c-2.2-12.9-13.4-74.9-41.2-151 66.4-10.6 124.7 6.8 131.9 9.1-9.4 58.9-43.3 109.8-90.8 142z" />
+      </svg>
+    </a>
+    <!-- Email Button -->
+    <a href="monsifelouarat@gmail.com"
+      class="block w-10 h-10 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"
+        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#ffffff"
+          d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50 h-screen">
+    <div class="container mx-auto px-4 justify-center items-center">
+      <div class="flex flex-wrap justify-center text-center mb-24">
+        <div class="w-full lg:w-6/12 px-4">
+          <h2 class="text-4xl font-bold">About Me</h2>
+          <p class="text-lg leading-relaxed m-4 text-gray-600 mt-20 text-justify">
+            Hello! I'm Monsif, a passionate individual fascinated by web development, design, and digital art.
+            Based
+            in [Your Location], I strive to create memorable digital experiences through my work. Outside of my
+            professional life, I'm an avid reader, nature enthusiast, and tech gadget aficionado.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="https://linkedin.com/in/monsif-elouarat"
+          class="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          type="button">
+          LinkedIn
+        </a>
+        <a href="mailto:monsifelouarat@gmail.com"
+          class="bg-gray-500 text-white active:bg-gray-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          type="button">
+          Email Me
+        </a>
+        <a href="https://www.github.com/monseeef"
+          class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          type="button">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <section id="about" class="py-20 bg-gray-50 h-screen flex items-center">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-between">
+      <div class="w-80 h-80 md:w-1/2 flex justify-center md:justify-start lg:pl-12">
+        <img src="./public/about.svg" alt="Intro Image"
+          class="w-auto m-0 p-0 h-96 max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl">
+      </div>
+      <div class="ml-24 md:w-1/2 text-center md:text-justify lg:pr-12">
+        <h2 class="text-4xl font-bold mb-4 text-blue-600">About Me</h2>
+        <p class="text-gray-600 text-lg mb-6">
+          I'm a passionate junior Full Stack Web Developer and Graphic Designer dedicated to crafting intuitive user
+          experiences and robust web applications. With a strong foundation in JavaScript, React, Node.js, and a flair
+          for
+          creative design, I aim to bridge the gap between engaging design and technical functionality.
+        </p>
+        <a href="#contact"
+          class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg">
+          Let's Connect
+        </a>
+
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Skills -->
+  <section id="skills" class=" py-20 min-h-screen bg-gradient-to-r from-indigo-900 to-indigo-400">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-white mb-28">Skills</h2>
+
+      <div class="flex flex-wrap justify-center gap-10">
+        <!-- HTML5 -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/html5.png" alt="HTML5" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">HTML5</span>
+        </div>
+        <!-- CSS3 -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/css.png" alt="CSS3" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">CSS3</span>
+        </div>
+        <!-- JavaScript -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/js.png" alt="JavaScript" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">JavaScript</span>
+        </div>
+        <!-- React -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/react.png" alt="React" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">React</span>
+        </div>
+        <!-- Node.js -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/nodejs.png" alt="Node.js" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">Node.js</span>
+        </div>
+        <!-- MongoDB -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/Mongodb.png" alt="MongoDB" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">MongoDB</span>
+        </div>
+        <!-- Tailwind CSS -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/tailwind.png" alt="Tailwind CSS" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">Tailwind CSS</span>
+        </div>
+        <!-- TypeScript -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/tscript.png" alt="TypeScript" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">TypeScript</span>
+        </div>
+        <!-- Adobe Illustrator -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/illustrator.png" alt="Adobe Illustrator" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">Adobe Illustrator</span>
+        </div>
+
+        <!-- Adobe XD -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/adobexd.png" alt="Adobe XD" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">Adobe XD</span>
+        </div>
+
+        <!-- Adobe InDesign -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/indesign.png" alt="Adobe InDesign" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">Adobe InDesign</span>
+        </div>
+
+        <!-- Figma -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="p-6 bg-white rounded-full shadow-lg border-2 border-gray-200 transform transition duration-300 ease-in-out group-hover:scale-110">
+            <img src="./public/figma.png" alt="Figma" class="skill-icon w-16 h-16">
+          </div>
+          <span class="text-xl text-white mt-4">Figma</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Works Section -->
+  <section id="work" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <a href="https://behance.com/" target="_blank" class="transform transition duration-500 hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./public/MonsifLogo.png" alt="My Personal Logo" class="w-full h-80 object-cover object-center">
+            <div class="p-4">
+              <h3 class="font-bold text-lg mb-2">My Personal Arabic Logo</h3>
+              <p class="text-gray-600 text-sm">This is a showcase of my personal logo, representing my identity and
+                brand
+                as a designer and developer.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://github.com/monseeef/" target="_blank"
+          class="transform transition duration-500 hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./public/blogapp.svg" alt="Blog Dashboard" class="w-full h-80 object-cover object-center">
+            <div class="p-4">
+              <h3 class="font-bold text-lg mb-2">Blog Application</h3>
+              <p class="text-gray-600 text-sm">Developed an Application Back-End, with Node.js, Express.js, MongoDB.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://github.com/monseeef/" target="_blank"
+          class="transform transition duration-500 hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./public/University.svg" alt="University" class="w-full h-80 object-cover object-center">
+            <div class="p-4">
+              <h3 class="font-bold text-lg mb-2">University Website</h3>
+              <p class="text-gray-600 text-sm">Implemented a full-stack website functionality, using PHP, SQL, designed
+                to
+                support thousands of concurrent users.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testi -->
+  <section id="testimonials" class="bg-gray-100 py-20 h-screen">
+    <div class="container mx-auto px-6 text-center h-screen">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">Testimonials</h2>
+      <div class="flex flex-wrap justify-center mt-24">
+        <!-- Testimonial 1 -->
+        <div class="w-full md:w-1/3 px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="bg-white rounded shadow-lg p-6">
+            <p class="text-gray-600">"Monsif's work ethic and attention to detail were outstanding. He delivered our
+              project on time and exceeded our expectations."</p>
+            <div class="mt-4">
+              <p class="text-gray-800 font-bold">Imane B.</p>
+              <p class="text-gray-600">Marketing Director</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="w-full md:w-1/3 px-4 mb-8 animate__animated animate__fadeIn animate__delay-1s">
+          <div class="bg-white rounded shadow-lg p-6">
+            <p class="text-gray-600">"Working with Monsif was a game-changer for our startup. His innovative solutions
+              have significantly improved our workflow."</p>
+            <div class="mt-4">
+              <p class="text-gray-800 font-bold">Soufiane K.</p>
+              <p class="text-gray-600">CEO & Founder</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="w-full md:w-1/3 px-4 mb-8 animate__animated animate__fadeIn animate__delay-2s">
+          <div class="bg-white rounded shadow-lg p-6">
+            <p class="text-gray-600">"Monsif's designs are not only visually stunning but also user-friendly. He truly
+              understands the importance of user experience."</p>
+            <div class="mt-4">
+              <p class="text-gray-800 font-bold">Ismail A.</p>
+              <p class="text-gray-600">Product Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto text-center">
+        <!-- <h4 class="text-lg font-bold mb-2">Let's Connect!</h4> -->
+        <section id="contact" class="bg-gray-900 text-white py-20 animate-fadeIn">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+            <p class="mb-8">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <form action="your-server-endpoint" method="POST" class="space-y-4 mx-auto max-w-xl">
+              <input type="text" name="name" placeholder="Your Name"
+                class=" text-gray-700 w-full px-4 py-2 rounded focus:outline-none" required>
+              <input type="email" name="email" placeholder="Your Email"
+                class="text-gray-700 w-full px-4 py-2 rounded focus:outline-none" required>
+              <textarea name="message" rows="4" placeholder="Your Message"
+                class=" text-gray-700 w-full px-4 py-2 rounded focus:outline-none" required></textarea>
+              <button type="submit"
+                class="px-6 py-2 rounded bg-purple-500 hover:bg-purple-600 text-white transition duration-200">Send
+                Message</button>
+            </form>
+          </div>
+        </section>
+
+        <p>You can reach me at <a href="mailto:youremail@example.com" class="underline">monsifelouarat@gmail.com</a></p>
+        <p class="mt-6">Follow me on social media</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="hover:text-purple-500">LinkedIn</a>
+          <a href="#" class="hover:text-purple-500">GitHub</a>
+          <a href="#" class="hover:text-purple-500">Dribbble</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js" type="module"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

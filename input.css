@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&family=Syne:wght@400;500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f5f7f8;
+}
+.img-bg {
+  height: 80px;
+  width: 120px;
+}
+
+.img-bg {
+  position: absolute;
+  background-color: #f4ce14;
+  border-radius: 40%;
+  filter: blur(72px);
+  z-index: -1;
+  animation: pulse 4s cubic-bezier(0, 0, 0, 0.5) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.5);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 10;
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home animation */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.slideInRight {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+/*  Hero section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.typing-effect {
+  border-right: 0.15em solid white;
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
