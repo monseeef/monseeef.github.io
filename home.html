@@ -16,22 +16,30 @@
   <header
     class="bg-transparent absolute top-0 pl-16 w-full flex justify-between items-center p-4 transition-all duration-300 ease-in-out"
     id="site-header">
-    <a href="#" class="text-3xl font-bold text-purple-500">mOn</a>
+    <a href="#" class="text-3xl font-bold text-purple-500"><img src="./public/mono.svg" alt="">M.De</a></a>
     <nav>
       <ul class="flex items-center space-x-4">
         <li><a href="/home.html"
-            class="text-white hover:text-purple-700 transition-colors duration-300 ease-in-out hover:scale-105 transform hover:text-shadow-md">Home</a>
+            class="text-white font-semibold hover:text-fuchsia-200 transition-colors duration-300 ease-in-out hover:scale-105 transform hover:text-shadow-md">Home</a>
         </li>
-        <li><a href="#about" class="text-white hover:text-gray-500 transition-colors duration-300">About Me</a></li>
-        <li><a href="#skills" class="text-white hover:text-gray-500 transition-colors duration-300">Skills</a></li>
-        <li><a href="#work" class="text-white hover:text-gray-500 transition-colors duration-300">Projects</a></li>
-        <li><a href="#contact" class="text-white hover:text-gray-500 transition-colors duration-300">Contact</a></li>
+        <li><a href="#about"
+            class="text-white font-semibold hover:text-fuchsia-200 transition-colors duration-300">About
+            Me</a></li>
+        <li><a href="#skills"
+            class="text-white font-semibold  hover:text-fuchsia-200 transition-colors duration-300">Skills</a></li>
+        <li><a href="#work"
+            class="text-white font-semibold hover:text-fuchsia-200 transition-colors duration-300">Projects</a></li>
+        <li><a href="#testimonials"
+            class="text-white font-semibold hover:text-fuchsia-200 transition-colors duration-300">Testimonials</a></li>
+        <li><a href="#contact"
+            class="text-white font-semibold hover:text-fuchsia-200 transition-colors duration-300">Contact</a></li>
         <li><a href="/public/Monsif-cv.pdf"
             class="bg-purple-500 text-white py-2 px-4 rounded transition-colors duration-300 hover:bg-purple-700"
             download>Download CV</a></li>
       </ul>
     </nav>
   </header>
+
 
 
   <!-- Hero Section -->
@@ -58,13 +66,36 @@
         </div>
 
       </div>
-      <div class="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0 pb-20 pr-20 slideInRight">
+      <div class=" md:w-1/2 md:rounded-full flex justify-center md:justify-end mt-8 md:mt-0 pb-20 pr-20 slideInRight">
         <img src="./public/profile1.jpg" alt="About Me"
           class="rounded-full border-4 border-indigo-500 shadow-xl transition-transform duration-500 hover:scale-110 w-auto h-96">
       </div>
     </div>
     <!-- Place this button in a fixed position on the bottom right corner of the screen -->
-
+    <a href="#home" id="scrollToNext" class="scroll-to-next z-50">
+      ↓
+    </a>
+    <script>
+      const scrollToNext = document.getElementById("scrollToNext");
+      scrollToNext.addEventListener('click', function (e) {
+        const scrol = scrollToNext.getAttribute('href');
+        if (scrol == '#home') {
+          scrollToNext.setAttribute('href', '#about');
+        }
+        if (scrol == '#about') {
+          scrollToNext.setAttribute('href', '#skills');
+        }
+        if (scrol == '#skills') {
+          scrollToNext.setAttribute('href', '#work');
+        }
+        if (scrol == '#work') {
+          scrollToNext.setAttribute('href', '#testimonials');
+        }
+        if (scrol == '#testimonials') {
+          scrollToNext.setAttribute('href', '#contact');
+        }
+      })
+    </script>
   </section>
 
   <div class="fixed right-0 top-1/3 z-50 space-y-2">
@@ -80,7 +111,7 @@
     <!-- LinkedIn Button -->
     <a href="https://www.linkedin.com/in/monsif-elouarat" target="_blank"
       class="block w-10 h-10 bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="36" viewBox="0 0 448 512">
         <path fill="#ffffff"
           d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
       </svg>
@@ -118,7 +149,7 @@
           <p class="text-lg leading-relaxed m-4 text-gray-600 mt-20 text-justify">
             Hello! I'm Monsif, a passionate individual fascinated by web development, design, and digital art.
             Based
-            in [Your Location], I strive to create memorable digital experiences through my work. Outside of my
+            I strive to create memorable digital experiences through my work. Outside of my
             professional life, I'm an avid reader, nature enthusiast, and tech gadget aficionado.
           </p>
         </div>

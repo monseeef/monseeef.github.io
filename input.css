@@ -105,3 +105,21 @@ html {
     border-color: white;
   }
 }
+/* Button scroll */
+.scroll-to-next {
+    position: fixed; /* Fix button position */
+    right: 20px; /* Place it 20px from the right */
+    bottom: 20px; /* Place it 20px from the bottom */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #673ab7; /* Use a purple background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer */
+    opacity: 0.7; /* Make it slightly transparent */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.scroll-to-next:hover {
+    opacity: 1; /* Fully opaque on hover */
+}

@@ -42,3 +42,20 @@ var swiper = new Swiper(".swiper-container", {
     disableOnInteraction: false,
   },
 });
+// Scroll
+document.getElementById("scrollToNext").addEventListener("click", function () {
+  // Get the current section by finding the closest section above the current scroll position
+  let scrollPosition = window.pageYOffset;
+  let sections = document.querySelectorAll("section");
+  let currentSectionIndex = Array.from(sections).findIndex(
+    (section) => section.offsetTop > scrollPosition
+  );
+
+  // If there's a next section, scroll to it; otherwise, scroll to the top
+  if (currentSectionIndex >= 0 && currentSectionIndex < sections.length - 1) {
+    let nextSection = sections[currentSectionIndex + 1];
+    window.scrollTo({ top: nextSection.offsetTop, behavior: "smooth" });
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top if it's the last section or none are found
+  }
+});
