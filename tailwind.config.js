@@ -14,6 +14,9 @@ module.exports = {
           800: "#2c5282",
         },
       },
+      boxShadow: {
+        "text-shadow": "1px 1px 2px rgba(0,0,0,0.10)",
+      },
     },
     fontFamily: {
       rubik: ["Rubik", "sans-serif"],
